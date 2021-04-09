@@ -1,10 +1,8 @@
-## majestic-diceware
+## python-diceware
 
 Simple Python script that gives you a secure password.
 
 For a more thorough explanation, please see https://theworld.com/~reinhold/diceware.html
-
-Don't forget to ⭐ this repo and fork it too! 👆
 
 ## How the script works...
 
@@ -23,7 +21,7 @@ The script emulates `n` amount of dice rolls (user provided).
 
 ## Credits
 
-If you have any suggestions to make the program better please let me know! This is my first post so I'm open to suggestions.
+If you have any suggestions to make the program better, let me know.
 
 🔔 Social Media 🔔
 
