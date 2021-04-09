@@ -1,4 +1,4 @@
-## python-diceware
+# python-diceware
 
 Simple Python script that gives you a secure password.
 
@@ -13,11 +13,11 @@ The script emulates `n` amount of dice rolls (five digits each).
 3. It also adds a random number (1-4 in length) to the end.
 4. Finally, it has a 50/50 chance of capitalizing the word.
 
-Example::
-
+Example
+  ```
   $ python3 dice.py 5
   Password = Faculty=taunt;retread=Posted%Chapped8
-
+  ```
 ## Usage
 
 `$ python3 dice.py -h` Displays the help message.
