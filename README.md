@@ -26,7 +26,7 @@ The script emulates `n` amount of dice rolls (five digits each).
 
 `$ python3 dice.py n` Replace `n` with the amount of words you want in your password
 
-## Credits
+## *fin*
 
 If you have any suggestions to make the program better, let me know.
 
