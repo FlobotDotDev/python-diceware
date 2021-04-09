@@ -15,18 +15,12 @@ The script emulates `n` amount of dice rolls (user provided).
 
 ## Usage
 
-`python3 dice.py -h` Displays the help message.
+`$ python3 dice.py -h` Displays the help message.
 
-`python3 dice.py n` Replace `n` with the amount of words you want in your password
+`$ python3 dice.py n` Replace `n` with the amount of words you want in your password
 
 ## Credits
 
 If you have any suggestions to make the program better, let me know.
 
-🔔 Social Media 🔔
-
-► Twitter https://twitter.com/_majesticflo
-
-► Instagram https://www.instagram.com/_majesticflo
-
-► GitHub https://github.com/majesticflo
+GitHub https://github.com/majesticflo
