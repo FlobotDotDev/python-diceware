@@ -17,7 +17,7 @@ The script emulates `n` amount of dice rolls (five digits each).
 
   ```
   $ python3 dice.py 5
-  Password = Faculty=taunt;retread=Posted%Chapped8
+  Password = party;Duchess#reprocess$Dreamless'Arena17
   ```
 
 ## Usage
