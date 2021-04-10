@@ -30,4 +30,4 @@ The script emulates `n` amount of dice rolls (five digits each).
 
 If you have any suggestions to make the program better, let me know.
 
-GitHub https://github.com/majesticflo
+GitHub https://github.com/dev-flobot
