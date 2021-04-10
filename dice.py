@@ -1,5 +1,5 @@
 '''
-Created by majesticflo
+Created by Flobot
 Apr 2021
 '''
 
@@ -19,7 +19,7 @@ def getNum():
 
 # Parses through the dicelist.txt and finds the line with the matching number
 def getWord(num):
-    file = open("./diceware.txt", "r")
+    file = open("diceware.txt", "r")
 
     for line in file:
         if re.search(num, line):
