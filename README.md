@@ -28,6 +28,6 @@ The script emulates `n` amount of dice rolls (five digits each).
 
 ## *fin*
 
-If you have any suggestions to make the program better, let me know.
+If you have any suggestions to make this program better, let me know.
 
 GitHub https://github.com/dev-flobot
