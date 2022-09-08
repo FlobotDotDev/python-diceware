@@ -25,9 +25,3 @@ The script emulates `n` amount of dice rolls (five digits each).
 `$ python3 dice.py -h` Displays the help message.
 
 `$ python3 dice.py n` Replace `n` with the amount of words you want in your password
-
-## *fin*
-
-If you have any suggestions to make this program better, let me know.
-
-GitHub https://github.com/FlobotDotDev
