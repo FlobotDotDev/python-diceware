@@ -1,4 +1,4 @@
-# python-diceware
+# diceware
 
 Simple Python script that gives you a secure password.
 
