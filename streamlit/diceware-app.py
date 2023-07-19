@@ -1,9 +1,4 @@
-import os, random, string, streamlit as st
-
-path = os.path.dirname(__file__)
-my_file = path+'/diceware.txt'
-
-st.write(my_file)
+import random, string, streamlit as st
 
 def generate_password():
     passwd = []
@@ -33,7 +28,7 @@ def generate_password():
     return final_pw
 
 # Load the diceware wordlist
-with open("diceware.txt", "r") as f:
+with open("/app/diceware/diceware.txt", "r") as f:
     wl = [line.strip() for line in f]
     wl_dict = {}
 
