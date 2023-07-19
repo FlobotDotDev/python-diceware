@@ -30,11 +30,11 @@ def generate_password():
 # Load the diceware wordlist
 with open("/app/diceware/streamlit/diceware.txt", "r") as f:
     wl = [line.strip() for line in f]
-    wl_dict = {}
-
-    for line in range(len(wl)):
-        l = wl[line].split("\t")
-        wl_dict[l[0]] = l[1]
+    
+wl_dict = {}
+for line in range(len(wl)):
+    l = wl[line].split("\t")
+    wl_dict[l[0]] = l[1]
 
 def on_generate_clicked():
     st.session_state.text = generate_password()
