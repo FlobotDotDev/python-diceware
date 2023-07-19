@@ -1,4 +1,9 @@
-import random, string, streamlit as st
+import os, random, string, streamlit as st
+
+path = os.path.dirname(__file__)
+my_file = path+'/diceware.txt'
+
+st.write(my_file)
 
 def generate_password():
     passwd = []
