@@ -2,11 +2,7 @@
 
 Simple Python script that gives you a secure password.
 
-For a more thorough explanation, please see https://theworld.com/~reinhold/diceware.html
-
-OR
-
-Check out my blog https://jamesflores.dev/posts/diceware/
+For a more thorough explanation, check out my [blog](https://jamesflores.dev/posts/diceware/).
 
 ## How the script works...
 
@@ -17,9 +13,7 @@ The script emulates `n` amount of die rolls (five digits each). The default is t
 3. It also adds a random number (1-3 in length) to the end.
 4. Finally, it has a 50/50 chance of capitalizing the word.
 
-## Try it out!
-
-https://diceware.streamlit.app
+[Try it out!](https://diceware.streamlit.app/)
 
 ### Example
 
