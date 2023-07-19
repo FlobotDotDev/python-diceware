@@ -19,7 +19,7 @@ The script emulates `n` amount of die rolls (five digits each). The default is t
 
 ## Try it out!
 
-<iframe loading="lazy" src="https://diceware.streamlit.app/?embed=true" scrolling="No" height="350px" width="100%" style="border: none;"></iframe>
+https://diceware.streamlit.app
 
 ### Example
 
