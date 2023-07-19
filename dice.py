@@ -1,71 +1,39 @@
-'''
-Created by James Flores
-Apr 2021
-'''
+import random, string
 
-import random, re, string, argparse
+def generate_password():
+    passwd = []
+    num = 3
 
-words = []
-punc = string.punctuation
+    # Generate a random number between 1 and 999
+    rand_num = str(random.randint(1, 999))
 
-# Grabs a random number [1-6] five times
-def getNum():
-    finalNum = ""
+    for w in range(num):
+        # Generate 5 random numbers between 1 and 6
+        roll = ''.join([str(random.randint(1, 6)) for _ in range(5)])
+        word = wl_dict[roll]
 
-    for num in range(5):
-        finalNum += str(random.randrange(1,7))
-
-    return finalNum
-
-# Parses through the dicelist.txt and finds the line with the matching number
-def getWord(num):
-    file = open("diceware.txt", "r")
-
-    for line in file:
-        if re.search(num, line):
-            wordSplit = line.split("\n")
-            wordSplit = wordSplit[0].split("\t")
-
-    return wordSplit[1]
-
-def passwd():
-    finalPass = ""
-
-    # Gets the argument from the user and calls the getWord func n times
-    for i in range(numOfWords):
-        words.append(getWord(getNum()))
-
-    # Checks the len of the list of words and rotates between them adding them to the finalPass var at the end
-    for w in range(len(words)):
-        curWord = words[w]
-        getPunc = punc[random.randrange(len(punc))]
-
-        # 50/50 chance of being capitalized
+        # Randomly capitalizes the current word
         if random.randrange(2) == 1:
-            curWord = curWord.capitalize()
+            word = word.capitalize()
 
-        # If last word then print num instead of punc
-        if w == len(words) - 1:
-            finalPass += curWord
+        # Appends word to array
+        passwd.append(word)
 
-            # Adds n amount of nums to the end of the passwd
-            for n in range(random.randrange(1,5)):
-                finalPass += str(random.randrange(1,10))
+        # Generate a random special character
+        passwd.append(random.choice(string.punctuation))
 
-        # Prints a random punc as the seperator between words
-        else:
-            finalPass += curWord + getPunc
+    # Concatenate the words, number, and special character to form the password
+    final_pw = ''.join(passwd) + rand_num
 
-    return finalPass
+    return final_pw
 
-# Argument parser
-parser = argparse.ArgumentParser(description='''
-Random password generator based on simulated dice rolls.
-''')
+# Load the diceware wordlist
+with open("diceware.txt", "r") as f:
+    wl = [line.strip() for line in f]
+    
+wl_dict = {}
+for line in range(len(wl)):
+    l = wl[line].split("\t")
+    wl_dict[l[0]] = l[1]
 
-# Argument to specify how many words are going to be in the passwd
-parser.add_argument('number', help='n words in password', type=int)
-numOfWords = vars(parser.parse_args())["number"]
-
-# Calls the passwd func and adds special chars and upper if user answered yes
-print("Password = " + passwd())
+print("Password = " + generate_password())
