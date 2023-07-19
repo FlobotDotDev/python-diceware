@@ -28,7 +28,7 @@ def generate_password():
     return final_pw
 
 # Load the diceware wordlist
-with open("diceware/diceware.txt", "r") as f:
+with open("diceware.txt", "r") as f:
     wl = [line.strip() for line in f]
     wl_dict = {}
 
