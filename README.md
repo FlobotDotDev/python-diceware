@@ -1,6 +1,6 @@
 # diceware
 
-Simple Python script that gives you a secure password.
+Python script that generates a secure and memorable password.
 
 For a more thorough explanation, check out my [blog](https://jamesflores.dev/posts/diceware/).
 
